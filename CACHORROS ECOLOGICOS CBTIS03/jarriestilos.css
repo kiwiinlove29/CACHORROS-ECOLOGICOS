@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,900;1,800&display=swap');
+ 
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    min-height: 700px;
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+    color: #656875;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #12114d;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    margin-top: 100px;
+    display: flex;
+    padding: 50px;
+    background-color: #f5f9fc;
+    border-radius: 25px;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    font-size: 50px;
+    line-height: 70px;
+    color: #12114d;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.header-txt h3 {
+    font-size: 25px;
+    line-height: 25px;
+    color: #e95f6f;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #656875;
+    margin-bottom: 35px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25 px;
+    background-color: #Fc697A;
+    font-size: 17px;
+    color: #ffffff;
+    border-radius: 15px;
+    text-transform: capitalize;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-1:hover {
+    background-color: #e95f6f;
+}
+
+.header-img {
+    width: 50%;
+    text-align: right;
+}
+
+.header-img img {
+    width: 400px;
+}
+
+.general-card img {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.general-card p{
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.general-2 {
+    margin: 0 35px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #12114d;
+    margin-bottom: 20px;
+}
+
+.general-2 p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.general-3 {
+    margin: 0 35px;
+}
+
+.general-3 p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.general-4 {
+    margin: 0 35px;
+}
+
+.general-4 p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.general-5 {
+    margin: 0 35px;
+}
+
+.general-5 p {
+    font-size: 10px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.general-5 img{
+    width: 200px;
+    height: 200px;
+}
+@media (max-width:991px) {
+
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #f0efef;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        height: 0vh;
+        min-height: 1000px;
+        background-color: #f5f9fc;
+    }
+
+    .btn-1:hover {
+        flex-direction: column;
+        padding: 50px 30px 20px 30px;
+        margin: 0%;
+    }
+
+    .header-txt {
+        width: 100%;
+        margin-right: 0%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-img img {
+        width: 100%; 
+    }
+
+    .general {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .general-2 {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align:left;
+    }
+
+    .general-3 {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align:left;
+    }
+
+    .general-4 {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align:left;
+    }
+
+    .general-5 {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align:left;
+    }
+
+}
